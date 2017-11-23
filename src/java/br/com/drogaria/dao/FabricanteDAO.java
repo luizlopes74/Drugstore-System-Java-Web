@@ -37,7 +37,7 @@ public class FabricanteDAO {
         FabricaConexao.fecharConexao();
     }//fim do metodo salvar
     
-    //metodo para listar todos os bairros cadastrados no banco
+    //metodo para listar todos os fabricantes do banco
     public List<Fabricante> listarTodos() throws SQLException{
         conexao = FabricaConexao.conexaoBanco();
         sql = "SELECT * FROM fabricante";
