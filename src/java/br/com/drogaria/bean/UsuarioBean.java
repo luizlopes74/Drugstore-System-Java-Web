@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.com.drogaria.bean;
 
 import br.com.drogaria.dao.UsuarioDAO;
@@ -16,27 +12,12 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 
-/**
- *
- * @author PauloCastelo
- */
+
 @ManagedBean(name = "MBUsuario")
 @ViewScoped
 public class UsuarioBean {
 
-    /**
-     * @return the nome
-     */
-    public String getNome() {
-        return nome;
-    }
-
-    /**
-     * @param nome the nome to set
-     */
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    
 
 
     private Usuario usuario;
@@ -110,6 +91,20 @@ public class UsuarioBean {
      */
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+    
+    /**
+     * @return the nome
+     */
+    public String getNome() {
+        return nome;
+    }
+
+    /**
+     * @param nome the nome to set
+     */
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
 
